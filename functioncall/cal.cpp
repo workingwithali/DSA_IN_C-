@@ -3,7 +3,7 @@ using namespace std;
 double add(double a, double b){
 	return a+b;
 }
-double minus(double a, double b){
+double minu(double a, double b){
 	return a-b;
 }
 double multiply(double a, double b){
@@ -22,7 +22,7 @@ int main(){
 	cout <<"Enter two Number:";
 	cin >> num1 >> num2 ;
 	cout <<"Addition "<<add(num1,num2)<<endl;
-	cout <<"minus "<<minus(num1,num2)<<endl;
+	cout << "minus: " << minu(num1, num2) << endl;
 	cout <<"Multiplication "<<multiply(num1,num2)<<endl;
 	cout <<"Division "<<divide(num1,num2)<<endl;
 	return 0;
