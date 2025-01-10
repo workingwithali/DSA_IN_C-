@@ -1,21 +1,18 @@
 #include <iostream>
 using namespace std;
 
-struct Rectangle {
-    float length;
-    float width;
+struct rectanger{
+	int length;
+	int weith;
 };
-
-int main() {
-    Rectangle r;
-    cout << "Enter length: ";
-    cin >> r.length;
-    cout << "Enter width: ";
-    cin >> r.width;
-
-    float area = r.length * r.width;
-    float perimeter = 2 * (r.length + r.width);
-
-    cout << "\nArea: " << area << "\nPerimeter: " << perimeter << endl;
-    return 0;
+int main(){
+	rectanger r;
+	cout<<"Enter length:";
+	cin>> r.length;
+	cout <<"Enter weith:";
+	cin>>r.weith;
+	float area = r.length * r.weith;
+	float perimeter = 2 * (r.length + r.weith);
+	cout << area <<" area of rectange"<<endl;
+	cout <<perimeter<<" perimeter of reactange" << endl;
 }
