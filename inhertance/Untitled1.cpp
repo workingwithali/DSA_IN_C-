@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 class Person{
-	protected:
+	private:
 		string name , gender;
 		int age;
 	public:
@@ -28,7 +28,7 @@ class Student:public Person{
 			year = y;
 		}
 		void Study(){
-			cout << name << " is studying in the " << program
+//			cout << name << " is studying in the " << program
              << " program, year " << year << "." << endl;
 		}
 		void HeldExam(){
