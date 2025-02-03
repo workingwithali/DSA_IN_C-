@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void subset(vector<int> &arr, vector<int> &ans;int i){
+void subset(vector<int> &arr, vector<int> &ans,int i){
     if (i== arr.size()){
         for (int val: ans){
             cout <<val;
@@ -17,7 +17,7 @@ void subset(vector<int> &arr, vector<int> &ans;int i){
 
     int main()
 {
-    vector<int> arr = {1,2,3,4,5};
+    vector<int> arr = {1,2,3};
     vector<int> ans ;
     subset(arr,ans,0);
 
