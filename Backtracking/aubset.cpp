@@ -11,7 +11,7 @@ void subset(vector<int> &arr, vector<int> &ans,int i){
     }
     ans.push_back(arr[i]);
     subset(arr,ans,i+1);
-    ans.pop_back()
+    ans.pop_back();
     subset(arr,ans,i+1);
 }
 
