@@ -26,8 +26,8 @@ int main(){
 	while(!s.empty()){
 		cout <<s.top();
 		s.pop();
+		cout<<' ';
 	}
-	cout<<' '<<endl;
 	
 	
 	return 0;
