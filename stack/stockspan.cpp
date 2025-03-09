@@ -9,7 +9,10 @@ int main(){
 	vector<int> ans(n,0);
 	stack<int> s;
 	for(int i=0;i<n;i++){
-		wh
+		while(s.size()>0&&price[s.top()]<=price[i]){
+			s.pop();
+		}
+		if(s.size()==0)
 	}
 	
 	return 0;
