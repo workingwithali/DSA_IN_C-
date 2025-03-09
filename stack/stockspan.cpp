@@ -12,8 +12,18 @@ int main(){
 		while(s.size()>0&&price[s.top()]<=price[i]){
 			s.pop();
 		}
-		if(s.size()==0)
+		if(s.empty(){
+			ans[i]=i+1;
+		}else{
+			ans[i]=i-s.top();
+		}
+		s.push(i);
 	}
+	for(int val: ans){
+		cout << val<<" ";
+		
+	}
+	cout<<endl;
 	
 	return 0;
 }
