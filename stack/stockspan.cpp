@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 #include<vector>
 #include<stack>
 using namespace std;
@@ -12,7 +12,7 @@ int main(){
 		while(s.size()>0&&price[s.top()]<=price[i]){
 			s.pop();
 		}
-		if(s.empty(){
+		if(s.empty()){
 			ans[i]=i+1;
 		}else{
 			ans[i]=i-s.top();
