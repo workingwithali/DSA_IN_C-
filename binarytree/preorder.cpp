@@ -14,6 +14,9 @@ class Node {
 		
 };
 int main(){
+	int s = 4;
+	int* ptr = &s;
+	count << ptr<<endl;
 	
 	return 0;
 	
