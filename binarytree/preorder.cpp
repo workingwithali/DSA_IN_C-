@@ -14,7 +14,13 @@ class Node {
 		
 };
 static int idx =-1
-Node *
+Node *buildTree(int preorder){
+	idx++;
+	if(preorder[idx]==-1){
+		return nullptr;
+	}
+	
+}
 int main(){
 	int s = 4;
 	int* ptr = &s;
