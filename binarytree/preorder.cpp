@@ -13,9 +13,12 @@ class Node {
 		}
 		
 };
+static int idx =-1
+Node *
 int main(){
 	int s = 4;
 	int* ptr = &s;
+
 	cout << *(ptr)<<endl;
 	
 	return 0;
