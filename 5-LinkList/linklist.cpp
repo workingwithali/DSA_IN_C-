@@ -50,22 +50,22 @@ public:
 		delete temp;
 	}
 	void pop_back() {
-    if (head == NULL) return;  
+    	if (head == NULL) return;  
 
-    if (head == tail) {  
-        delete head;
-        head = tail = NULL;
-        return;
-    }
+    	if (head == tail) {  
+        	delete head;
+        	head = tail = NULL;
+        	return;
+    	}
 
-    Node* temp = head;
-    while (temp->next != tail) {
-        temp = temp->next;
-    }
-    delete tail;
-    tail = temp;
-    tail->next = NULL;
-}
+    	Node* temp = head;
+    	while (temp->next != tail) {
+        	temp = temp->next;
+    	}
+    	delete tail;
+    	tail = temp;
+    	tail->next = NULL;
+	}
 
 
 	void print() {
@@ -92,6 +92,19 @@ public:
 		newNode->next = temp->next;
 		temp->next = newNode;
 	}
+	void search(int val){
+		Node* temp = head;
+		int i=0;
+		while(temp!= NULL){
+			if(val == temp->data){
+				cout<<"search (" <<i<<") ";
+				return ;
+			}
+			temp = temp->next;
+			i++;
+		}
+		cout <<"-1";
+	}
 };
 
 int main() {
@@ -101,7 +114,7 @@ int main() {
 	ll.push_front(1);
 	ll.push_back(4);
 	ll.print();
-	ll.insert(6,3);
+	ll.search(4);
 	ll.print();
 
 	return 0;
